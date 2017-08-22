@@ -1,0 +1,8 @@
+main: me.bladian.genbuckets.Core
+name: GenBucketsV2
+version: 1.0
+
+commands:
+  gb:
+
+depend: [Vault]
