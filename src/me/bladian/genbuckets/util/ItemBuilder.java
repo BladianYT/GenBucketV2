@@ -1,4 +1,4 @@
-package me.bladian.genbuckets;
+package me.bladian.genbuckets.util;
 
 import org.bukkit.Color;
 import org.bukkit.DyeColor;

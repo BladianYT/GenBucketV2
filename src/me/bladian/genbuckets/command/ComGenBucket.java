@@ -1,6 +1,7 @@
-package me.bladian.genbuckets;
+package me.bladian.genbuckets.command;
 
-import org.bukkit.Bukkit;
+import me.bladian.genbuckets.GenBucketV2;
+import me.bladian.genbuckets.Inventories;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -19,8 +20,8 @@ import org.bukkit.entity.Player;
 public class ComGenBucket implements CommandExecutor
 {
 
-    private Core core = Core.instance;
-    private Inventories inventories = core.getInventories();
+    private GenBucketV2 genBucketV2 = GenBucketV2.instance;
+    private Inventories inventories = genBucketV2.getInventories();
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings)

@@ -1,5 +1,8 @@
 package me.bladian.genbuckets;
 
+import me.bladian.genbuckets.command.ComGenBucket;
+import me.bladian.genbuckets.manager.GenerationManager;
+import me.bladian.genbuckets.util.Reference;
 import net.milkbowl.vault.economy.Economy;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
@@ -15,13 +18,14 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 
 
-public class Core extends JavaPlugin
+public class GenBucketV2 extends JavaPlugin
 {
 
-    public static Core instance;
+    public static GenBucketV2 instance;
 
     private Reference reference;
     private Inventories inventories;
+    private GenerationManager generationManager;
 
     private Economy economy;
 
@@ -61,6 +65,8 @@ public class Core extends JavaPlugin
         reference.setTICKS(getConfig().getInt("ticks"));
 
         inventories = new Inventories();
+
+        generationManager = new GenerationManager();
 
 
         ComGenBucket comGenBucket = new ComGenBucket();
@@ -102,5 +108,10 @@ public class Core extends JavaPlugin
     public Economy getEconomy()
     {
         return economy;
+    }
+
+    public GenerationManager getGenerationManager()
+    {
+        return generationManager;
     }
 }

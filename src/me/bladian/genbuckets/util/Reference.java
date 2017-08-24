@@ -1,4 +1,4 @@
-package me.bladian.genbuckets;
+package me.bladian.genbuckets.util;
 
 /**
  * Created by Bladian. Before using the code, kindly ask permission to him via the following methods.
@@ -9,6 +9,9 @@ package me.bladian.genbuckets;
  * Thank you for reading!
  */
 
+/*
+One day I'll fix the shit naming conventions here, but that today is not today!
+ */
 
 public class Reference
 {

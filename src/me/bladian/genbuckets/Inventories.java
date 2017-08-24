@@ -1,5 +1,7 @@
 package me.bladian.genbuckets;
 
+import me.bladian.genbuckets.util.ItemBuilder;
+import me.bladian.genbuckets.util.Reference;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
@@ -19,8 +21,8 @@ import org.bukkit.inventory.ItemStack;
 public class Inventories
 {
 
-    private Core core = Core.instance;
-    private Reference reference = core.getReference();
+    private GenBucketV2 genBucketV2 = GenBucketV2.instance;
+    private Reference reference = genBucketV2.getReference();
 
     public Inventories()
     {
